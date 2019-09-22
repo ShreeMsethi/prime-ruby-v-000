@@ -16,7 +16,7 @@
 #   # prime_divisor = root_range.select{|i| i % i == 0 && i % 2 != 0 && i % 3 != 0}
    
    def prime?(num)
-      if num < 0 || num == 1 
+      if num < 0 || num == 0
         return false
       else
         (2..Integer.sqrt(num)).each do |i| 
