@@ -23,5 +23,5 @@
           return false if num % i == 0 
         end
       end
-        return true
+        return false
     end
