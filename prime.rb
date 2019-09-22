@@ -16,12 +16,12 @@
 #   # prime_divisor = root_range.select{|i| i % i == 0 && i % 2 != 0 && i % 3 != 0}
    
    def prime?(num)
-      if num < 0 || num == 0
+      if num <= 0 || num == 1
         return false
       else
         (2..Integer.sqrt(num)).each do |i| 
           return false if num % i == 0 
         end
-      end
         return true
+      end
     end
